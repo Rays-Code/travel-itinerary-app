@@ -12,16 +12,16 @@ const StatusBar = () => {
         {/* icon-left */}
         <div className='w-[75px] h-[13px] flex justify-between py-1 mr-1'>
         <div>
-            <img src='../public/assets/signal.png' className='block dark:hidden'/>
-            <img src='../public/assets/signal-dark.png' className='hidden dark:block'/>
+            <img src='/assets/signal.png' className='block dark:hidden'/>
+            <img src='/assets/signal-dark.png' className='hidden dark:block'/>
         </div>
         <div>
-            <img src='../public/assets/wi-fi.png' className='block dark:hidden'/>
-            <img src='../public/assets/wi-fi-dark.png' className='hidden dark:block'/>
+            <img src='/assets/wi-fi.png' className='block dark:hidden'/>
+            <img src='/assets/wi-fi-dark.png' className='hidden dark:block'/>
         </div>
         <div>
-            <img src='../public/assets/battery.png' className='block dark:hidden'/>
-            <img src='../public/assets/battery-dark.png' className='hidden dark:block'/>
+            <img src='/assets/battery.png' className='block dark:hidden'/>
+            <img src='/assets/battery-dark.png' className='hidden dark:block'/>
 
         </div>
         </div>

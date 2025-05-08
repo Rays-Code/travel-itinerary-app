@@ -8,7 +8,7 @@ const TripCardInfo = () => {
       <div className="flex items-center gap-2">
         <div className="w-10 h-5 rounded-full  flex items-center justify-center">
           <img 
-            src="../../../public/assets/clock.png" 
+            src="/assets/clock.png" 
             alt="duration" 
           />
         </div>
@@ -22,7 +22,7 @@ const TripCardInfo = () => {
       <div className="flex items-center gap-2">
         <div className="w-10 h-5 rounded-full flex items-center justify-center">
           <img 
-            src="../../../public/assets/people.png" 
+            src="/assets/people.png" 
             alt="group" 
 
           />
@@ -37,7 +37,7 @@ const TripCardInfo = () => {
       <div className="flex items-center gap-2">
         <div className="w-10 h-5 rounded-full flex items-center justify-center">
           <img 
-            src="../../../public/assets/activies.png" 
+            src="/assets/activies.png" 
             alt="activities" 
           />
         </div>

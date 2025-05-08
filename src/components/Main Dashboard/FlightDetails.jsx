@@ -23,7 +23,7 @@ const FlightDetails = () => {
       </div>
 
       <div>
-        <img src='../../../public/assets/right-arrow.png' className='rotate-[45deg] mt-1 w-full h-auto' />
+        <img src='/assets/right-arrow.png' className='rotate-[45deg] mt-1 w-full h-auto' />
       </div>
 
       <div className='flex flex-col text-[#F5F5F5] mr-30'>
@@ -36,7 +36,7 @@ const FlightDetails = () => {
   </div>
 
   <div className='absolute'>
-        <img src='../../../public/assets/Plane.png' className='w-50 ml-38 mt-3 scale-100'/>
+        <img src='/assets/Plane.png' className='w-50 ml-38 mt-3 scale-100'/>
   </div>
 </div>
 

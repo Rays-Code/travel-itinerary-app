@@ -23,13 +23,13 @@ const Trip = () => {
               </div>
             </div>
             <div className='pt-4 pr-2'>
-              <img src='../../../public/assets/right-arrow.png' className='w-12' />
+              <img src='/assets/right-arrow.png' className='w-12' />
             </div>
           </div>
 
           {/* Flipped image */}
           <img
-            src='../../../public/assets/tokyo.png'
+            src='/assets/tokyo.png'
             className='w-[353px] h-[330px] rounded-[16px] transform -scale-x-100 origin-center z-0'
           />
 

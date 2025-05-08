@@ -17,8 +17,8 @@ const OnboardingForm = () => {
         <div className='flex flex-col items-start w-[353px] h-[24px] gap-2'>
         <h3 className='font-montsemibold font-bold text-xl dark:text-[#F5F5F5]'>Where would you like to go?</h3>
         <div className='w-full'>
-        <img src='../public/assets/akar-icons_location.png' className='absolute p-2 block dark:hidden'/> 
-        <img src='../public/assets/akar-icons_location-dark.png' className='absolute p-2 hidden dark:block'/> 
+        <img src='assets/akar-icons_location.png' className='absolute p-2 block dark:hidden'/> 
+        <img src='/assets/akar-icons_location-dark.png' className='absolute p-2 hidden dark:block'/> 
         <input type="text" placeholder="Enter Destination" className='border border-[#BFBFBF] rounded-lg gap-2 p-2 pl-8 font-montserrat font-medium text-base w-full placeholder-[#0B0809] dark:placeholder-[#F5F5F5] dark:bg-[#333333]'/>
         </div>
         </div>
@@ -29,8 +29,8 @@ const OnboardingForm = () => {
 
         <div className="relative w-full">
         {/* Calendar Icon */}
-        <img src="../public/assets/uil_calendar.png" className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 block dark:hidden" />
-        <img src="../public/assets/uil_calendar-dark.png" className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 hidden dark:block" />
+        <img src="/assets/uil_calendar.png" className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 block dark:hidden" />
+        <img src="/assets/uil_calendar-dark.png" className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 hidden dark:block" />
 
 
         {/* Dropdown Arrow Icon */}
@@ -68,25 +68,25 @@ const OnboardingForm = () => {
         <div className='flex flex-col gap-2 w-full h-[150px] text-base font-montserrat font-medium'>
             <div className='flex gap-3'>
                 <button className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
-                <img src='../public/assets/solo.png' className='h-6 mt-1 block dark:hidden'/>
-                <img src='../public/assets/solo-dark.png' className='h-6 mt-1 hidden dark:block'/>
+                <img src='/assets/solo.png' className='h-6 mt-1 block dark:hidden'/>
+                <img src='/assets/solo-dark.png' className='h-6 mt-1 hidden dark:block'/>
                 <div className='mt-1 dark:text-[#F5F5F5]'>Solo</div>
                     </button>
                 <button className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
-                <img src='../public/assets/couple.png' className='h-6 mt-1 block dark:hidden'/>
-                <img src='../public/assets/couple-dark.png' className='h-6 mt-1 hidden dark:block'/>
+                <img src='/assets/couple.png' className='h-6 mt-1 block dark:hidden'/>
+                <img src='/assets/couple-dark.png' className='h-6 mt-1 hidden dark:block'/>
                 <div className='mt-1 dark:text-[#F5F5F5]'>Couple</div>
                     </button>
             </div>
             <div className='flex gap-3 mt-2'>
             <button className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
-                <img src='../public/assets/family.png' className='h-6 mt-1 block dark:hidden'/>
-                <img src='../public/assets/family-dark.png' className='h-6 mt-1 hidden dark:block'/>
+                <img src='/assets/family.png' className='h-6 mt-1 block dark:hidden'/>
+                <img src='/assets/family-dark.png' className='h-6 mt-1 hidden dark:block'/>
                 <div className='mt-1 dark:text-[#F5F5F5]'>Family</div>
                     </button>
             <button className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
-                <img src='../public/assets/friends.png' className='h-6 mt-1 block dark:hidden'/>
-                <img src='../public/assets/friends-dark.png' className='h-6 mt-1 hidden dark:block'/>
+                <img src='/assets/friends.png' className='h-6 mt-1 block dark:hidden'/>
+                <img src='/assets/friends-dark.png' className='h-6 mt-1 hidden dark:block'/>
                 <div className='mt-1 dark:text-[#F5F5F5]'>Friends</div>
                     </button>
             </div>
