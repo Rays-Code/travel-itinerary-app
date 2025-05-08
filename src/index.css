@@ -1,41 +1,41 @@
 @font-face{
   font-family: SF Pro Text;
-  src: url("/fonts/SF-Pro-Display-Regular.otf");
+  src: url("/assets/fonts/SF-Pro-Display-Regular.otf");
 }
 
 @font-face{
   font-family: Mont;
-  src: url("/fonts/Mont-Bold.ttf");
+  src: url("/assets/fonts/Mont-Bold.ttf");
 }
 
 @font-face{
   font-family: Mont Semibold;
-  src: url("/fonts/Mont-SemiBold.ttf");
+  src: url("/assets/fonts/Mont-SemiBold.ttf");
 }
 
 @font-face{
   font-family: Mont Light;
-  src: url("/fonts/Mont-Light.ttf");
+  src: url("/assets/fonts/Mont-Light.ttf");
 }
 
 @font-face{
   font-family: Mont ExtraLight;
-  src: url("/fonts/Mont-ExtraLight.ttf");
+  src: url("/assets/fonts/Mont-ExtraLight.ttf");
 }
 
 @font-face{
   font-family: Montserrat;
-  src: url("/fonts/Montserrat-Medium.ttf");
+  src: url("/assets/fonts/Montserrat-Medium.ttf");
 }
 
 @font-face{
   font-family: Montserrat Light;
-  src: url("/fonts/Montserrat-Light.ttf");
+  src: url("/assets/fonts/Montserrat-Light.ttf");
 }
 
 @font-face{
   font-family: Moderniz;
-  src: url("/fonts/MODERNIZ 900.otf");
+  src: url("/assets/fonts/MODERNIZ 900.otf");
 }
 
 @import "tailwindcss";
