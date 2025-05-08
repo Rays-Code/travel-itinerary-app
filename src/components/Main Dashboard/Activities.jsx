@@ -1,5 +1,4 @@
 import React from 'react'
-import Acts from './Acts'
 import TourCard from './TourCard'
 
 const Activities = () => {
