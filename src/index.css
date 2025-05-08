@@ -1,0 +1,54 @@
+@font-face{
+  font-family: SF Pro Text;
+  src: url("../public/assets/fonts/SF-Pro-Display-Regular.otf");
+}
+
+@font-face{
+  font-family: Mont;
+  src: url("../public/assets/fonts/Mont-Bold.ttf");
+}
+
+@font-face{
+  font-family: Mont Semibold;
+  src: url("../public/assets/fonts/Mont-SemiBold.ttf");
+}
+
+@font-face{
+  font-family: Mont Light;
+  src: url("../public/assets/fonts/Mont-Light.ttf");
+}
+
+@font-face{
+  font-family: Mont ExtraLight;
+  src: url("../public/assets/fonts/Mont-ExtraLight.ttf");
+}
+
+@font-face{
+  font-family: Montserrat;
+  src: url("../public/assets/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face{
+  font-family: Montserrat Light;
+  src: url("../public/assets/fonts/Montserrat-Light.ttf");
+}
+
+@font-face{
+  font-family: Moderniz;
+  src: url("../public/assets/fonts/MODERNIZ 900.otf");
+}
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme{
+  --font-sf: SF Pro Text, 'sans-serif';
+  --font-mont: Mont, 'sans-serif';
+  --font-montsemibold: Mont Semibold, 'sans-serif';
+  --font-montlight: Mont Light, 'sans-serif';
+  --font-montextralight: Mont ExtraLight, 'sans-serif';
+  --font-montserrat: Montserrat, 'sans-serif';
+  --font-montserratlight: Montserrat Light, 'sans-serif';
+  --font-moderniz: Moderniz, 'sans-serif';
+}
