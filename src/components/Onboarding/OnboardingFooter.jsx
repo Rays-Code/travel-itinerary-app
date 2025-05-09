@@ -4,7 +4,7 @@ const OnboardingFooter = () => {
   const navigate = useNavigate();
   
   return (
-    <div className='flex justify-center mt-75 w-full gap-2'>
+    <div className='flex justify-center mt-65 w-full gap-2'>
        
             <button onClick={() => {
               navigate("/dashboard")

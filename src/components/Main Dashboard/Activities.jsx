@@ -96,7 +96,7 @@ const Activities = () => {
 
           <div className='flex gap-2'>
             <div>
-              <img src='/assets/hiking.png' className='w-3'/>
+              <img src='/assets/images/hiking.png' className='w-3'/>
             </div>
             <div className='font-montserrat font-semibold text-sm text-[#3643FB]'>3 Activities</div>
           </div>
@@ -107,21 +107,21 @@ const Activities = () => {
         {/* Tour-card */}
         <div className='mt-3'>
         <TourCard
-        image="/assets/senso-ji-temple.png"
+        image="/assets/images/senso-ji-temple.png"
         title="Senso-ji Temple & Nakamise Shopping Street Senso-ji"
         time="8:15 am Morning"
         duration="3 hours"
         pickup="From Hotel"
       />
       <TourCard
-        image="/assets/tokyo-sky-tree.png"
+        image="/assets/images/tokyo-sky-tree.png"
         title="Tokyo Sky Tree"
         time="1:00 pm Afternoon"
         duration="3 hours"
         pickup="From Nakamise Street"
       />
       <TourCard
-        image="/assets/kimono-wearing.png"
+        image="/assets/images/kimono-wearing.png"
         title="Kimono Wearing"
         time="Anytime before 8:00pm"
         duration="1-2 hours"
