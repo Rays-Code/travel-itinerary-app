@@ -3,7 +3,7 @@ import React from 'react'
 const TripCardInfo = () => {
 
    return (
-        <div className="absolute bottom-0 left-0 right-0 p-3 flex items-center justify-between">
+        <div className="absolute bottom-0 left-0 right-0 p-3 flex items-center justify-between mb-20">
       {/* Duration */}  
       <div className="flex items-center gap-2">
         <div className="w-10 h-5 rounded-full  flex items-center justify-center">
