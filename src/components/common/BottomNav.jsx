@@ -3,7 +3,7 @@ import React from 'react';
 
 const BottomNav = () => {
   return (
-    <div className="fixed bottom-0 left-0 w-full h-[64px] bg-[#FDFBF7] flex justify-around items-center p-[12px] z-50">
+    <div className="fixed bottom-0 left-0 w-full h-[64px] bg-[#FDFBF7] sm:w-[383px] flex justify-around items-center p-[12px] z-50">
       <button className="flex flex-col items-center">
         <div className="p-2 rounded-full">
           <img src="/assets/images/home-button.png" alt="Home" className="w-12 h-12" />
