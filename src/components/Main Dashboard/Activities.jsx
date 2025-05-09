@@ -69,7 +69,7 @@ const Activities = () => {
           </div>
 
           {/* Horizontal Scroller */}
-          <div className="overflow-x-auto flex gap-2 py-4 px-2 scrollbar-hide mt-2">
+          <div className="overflow-x-auto flex gap-2 py-4 px-2 scrollbar-hide">
           {/* JAN 27 - Selected */}
           <div className="flex items-center justify-center py-2 pr-2 pl-1 w-[73px] h-[44px] rounded-[8px] border border-[#313DDF] min-w-[60px] text-center overflow-hidden ">
 
