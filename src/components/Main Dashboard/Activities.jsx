@@ -42,7 +42,7 @@ const Activities = () => {
 ])
 
   return (
-      <div className='flex flex-col justify-start items-start w-full sm:w-[353px] gap-4'>
+      <div className='flex flex-col justify-start items-start w-full sm:w-[353px] gap-4 cursor-pointer'>
       <div className='flex justify-between w-full sm:w-[353px]'>
       <h3 className='w-[177px] h-[24px] text-lg font-montsemibold text-[#333333] font-bold ml-[19px]'>
         Activities
@@ -69,9 +69,9 @@ const Activities = () => {
           </div>
 
           {/* Horizontal Scroller */}
-          <div className="overflow-x-auto flex gap-2 py-4 px-2 scrollbar-hide">
+          <div className="overflow-x-auto flex gap-2 py-4 px-2 scrollbar-hide mt-2">
           {/* JAN 27 - Selected */}
-          <div className="flex items-center justify-center py-2 pr-2 pl-1 w-[73px] h-[44px] rounded-[8px] border border-[#313DDF] min-w-[60px] text-center overflow-hidden">
+          <div className="flex items-center justify-center py-2 pr-2 pl-1 w-[73px] h-[44px] rounded-[8px] border border-[#313DDF] min-w-[60px] text-center overflow-hidden ">
 
           <div className="bg-[#313DDF] text-white text-xs p-2 gap-[10px] w-[24px] h-[44px] flex items-center justify-center mr-1">
             <span className='rotate-[-90deg] font-montserrat font-semibold text-xs'>JAN</span>
