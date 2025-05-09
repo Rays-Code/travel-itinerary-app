@@ -1,40 +1,40 @@
 @font-face{
-  font-family: SF Pro Text;
+  font-family: 'SF Pro Text';
   src: url("/assets/fonts/SF-Pro-Display-Regular.otf") format('opentype'); 
 }
 
 @font-face{
-  font-family: Mont;
+  font-family: 'Mont';
   src: url("/assets/fonts/Mont-Bold.ttf") format('truetype');
 }
 
 @font-face{
-  font-family: Mont Semibold;
+  font-family: 'Mont Semibold';
   src: url("/assets/fonts/Mont-SemiBold.ttf") format('truetype');
 }
 
 @font-face{
-  font-family: Mont Light;
+  font-family: 'Mont Light';
   src: url("/assets/fonts/Mont-Light.ttf") format('truetype');
 }
 
 @font-face{
-  font-family: Mont ExtraLight;
+  font-family: 'Mont ExtraLight';
   src: url("/assets/fonts/Mont-ExtraLight.ttf") format('truetype');
 }
 
 @font-face{
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   src: url("/assets/fonts/Montserrat-Medium.ttf") format('truetype');
 }
 
 @font-face{
-  font-family: Montserrat Light;
+  font-family: 'Montserrat Light';
   src: url("/assets/fonts/Montserrat-Light.ttf") format('truetype');
 }
 
 @font-face{
-  font-family: Moderniz;
+  font-family: 'Moderniz';
   src: url("/assets/fonts/MODERNIZ900.otf") format('opentype');
 }
 
@@ -43,12 +43,12 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme{
-  --font-sf: SF Pro Text, 'sans-serif';
-  --font-mont: Mont, 'sans-serif';
-  --font-montsemibold: Mont Semibold, 'sans-serif';
-  --font-montlight: Mont Light, 'sans-serif';
-  --font-montextralight: Mont ExtraLight, 'sans-serif';
-  --font-montserrat: Montserrat, 'sans-serif';
-  --font-montserratlight: Montserrat Light, 'sans-serif';
-  --font-moderniz: Moderniz, 'sans-serif';
+  --font-sf: "SF Pro Text", sans-serif;
+  --font-mont: "Mont", sans-serif;
+  --font-montsemibold: "Mont Semibold", sans-serif;
+  --font-montlight: "Mont Light", sans-serif;
+  --font-montextralight: "Mont ExtraLight", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-montserratlight: "Montserrat Light", sans-serif;
+  --font-moderniz: "Moderniz", sans-serif;
 }
