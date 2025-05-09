@@ -1,5 +1,6 @@
 import React from 'react';
 import TripCardInfo from './TripCardInfo';
+import BottomNav from '../common/BottomNav';
 
 const Trip = () => {
   return (
@@ -34,6 +35,8 @@ const Trip = () => {
           />
 
           <TripCardInfo />
+
+          <BottomNav />
         </div>
       </div>
     </div>
