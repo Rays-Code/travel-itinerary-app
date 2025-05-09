@@ -11,7 +11,7 @@ const OnboardingFooter = () => {
               navigate("/dashboard")
             }} className='bg-[#3643FB] text-[#F5F5F5]  text-base font-montserrat font-medium p-3 w-full mx-4 rounded-lg'>Continue</button>
        
-       <BottomNav />
+      
     </div>
   )
 }
