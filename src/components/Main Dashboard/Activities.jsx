@@ -1,7 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TourCard from './TourCard'
+import { useNavigate } from 'react-router-dom'
 
 const Activities = () => {
+
+  const navigate = useNavigate()
+
+  const [daydetailes, setdayDetailes] = useState([
+    { day: "TUE", date: "28" },
+    { day: "WED", date: "29" },
+    { day: "THU", date: "30" },
+    { day: "FRI", date: "31" },
+    { day: "SAT", date: "01" },
+    { day: "SUN", date: "02" },
+  ])
+
+  const [tourCardInfo, setTourCardInfo] = useState([{
+    id: 1,
+    image: "/assets/images/senso-ji-temple.png",
+    title: "Senso-ji Temple & Nakamise Shopping Street Senso-ji",
+    time: "8:15 am Morning",
+    duration: "3 hours",
+    pickup: "From Hotel"
+  },
+  {
+    id: 2,
+    image: "/assets/images/tokyo-sky-tree.png",
+    title: "Tokyo Sky Tree",
+    time: "1:00 pm Afternoon",
+    duration: "3 hours",
+    pickup: "From Nakamise Street"
+  },
+  {
+    id: 3,
+    image: "/assets/images/kimono-wearing.png",
+    title: "Kimono Wearing",
+    time: "Anytime before 8:00pm",
+    duration: "1-2 hours",
+    pickup: "From Hotel"
+  }
+])
+
   return (
       <div className='flex flex-col justify-start items-start w-full sm:w-[353px] gap-4'>
       <div className='flex justify-between w-full sm:w-[353px]'>
@@ -45,14 +84,7 @@ const Activities = () => {
           </div>
 
           {/* Other days - Greyed out */}
-          {[
-          { day: "TUE", date: "28" },
-          { day: "WED", date: "29" },
-          { day: "THU", date: "30" },
-          { day: "FRI", date: "31" },
-          { day: "SAT", date: "01" },
-          { day: "SUN", date: "02" },
-          ].map((d, i) => (
+          {daydetailes.map((d, i) => (
           <div key={i} >
           <div className='flex flex-col items-center justify-center bg-[#E5E5E5] w-[46px] h-[44px] rounded-[8px] text-center py-1 px2 gap-2'>
             <div>
@@ -105,30 +137,21 @@ const Activities = () => {
         </div>
 
         {/* Tour-card */}
-        <div className='mt-3'>
-        <TourCard
-        image="/assets/images/senso-ji-temple.png"
-        title="Senso-ji Temple & Nakamise Shopping Street Senso-ji"
-        time="8:15 am Morning"
-        duration="3 hours"
-        pickup="From Hotel"
-      />
-      <TourCard
-        image="/assets/images/tokyo-sky-tree.png"
-        title="Tokyo Sky Tree"
-        time="1:00 pm Afternoon"
-        duration="3 hours"
-        pickup="From Nakamise Street"
-      />
-      <TourCard
-        image="/assets/images/kimono-wearing.png"
-        title="Kimono Wearing"
-        time="Anytime before 8:00pm"
-        duration="1-2 hours"
-        pickup="From Hotel"
-      />
-        </div>
-        
+        <div className='mt-3 ml-[19px] cursor-pointer' onClick={() => {navigate("/search")}}>
+          {tourCardInfo.map((tour) => {
+            return <div key={tour.id}>
+              <TourCard 
+              image={tour.image}
+              title={tour.title}
+              time={tour.time}
+              duration={tour.duration}
+              pickup={tour.pickup}
+              />
+            </div>
+          })}
+
+
+        </div>        
         </div>
   )
 }

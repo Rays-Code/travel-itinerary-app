@@ -1,5 +1,6 @@
 const TourCard = ({ image, title, time, duration, pickup }) => (
-    <div className="flex border overflow-hidden shadow-sm mb-4 bg-white w-[349px] h-[145px] rounded-[8px] gap-[10px] border border-[#BFBFBF] ml-[19px]">
+    
+    <div className="flex border overflow-hidden shadow-sm mb-4 bg-white w-[349px] h-[145px] rounded-[8px] gap-[10px] border border-[#BFBFBF] cursor-pointer">
       <img src={image} alt={title} className="w-32 h-auto object-cover" />
 
       <div className="p-2 flex flex-col justify-between py-2">

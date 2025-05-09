@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 
 const OnboardingForm = () => {
+    const [destination, setDestination] = useState("")
+    const [duration, setDuration] = useState("")
+    const [travellingWith, setTravellingWith] = useState("")
+
   return (
     <div className='flex flex-col gap-9 top-[53px] left-[20px] text-[#0B0809]'>
 
@@ -19,7 +23,9 @@ const OnboardingForm = () => {
         <div className='w-full'>
         <img src='/assets/images/akar-icons_location.png' className='absolute p-2 block dark:hidden'/> 
         <img src='/assets/images/akar-icons_location-dark.png' className='absolute p-2 hidden dark:block'/> 
-        <input type="text" placeholder="Enter Destination" className='border border-[#BFBFBF] rounded-lg gap-2 p-2 pl-8 font-montserrat font-medium text-base w-full placeholder-[#0B0809] dark:placeholder-[#F5F5F5] dark:bg-[#333333]'/>
+        <input type="text" placeholder="Enter Destination" onChange={(e) => {
+            setDestination(e.target.value)
+        }} value={destination} className='border border-[#BFBFBF] rounded-lg gap-2 p-2 pl-8 font-montserrat font-medium text-base w-full placeholder-[#0B0809] dark:placeholder-[#F5F5F5] dark:bg-[#333333]'/>
         </div>
         </div>
 
@@ -49,7 +55,9 @@ const OnboardingForm = () => {
 
 
         {/* Select Dropdown */}
-        <select className="appearance-none border border-[#BFBFBF] rounded-lg p-3 pl-10 pr-10 font-montserrat font-medium text-base w-full text-[#0B0809] dark:text-[#F5F5F5] dark:bg-[#333333]">
+        <select onChange={(e) => {
+            setDuration(e.target.value)
+        }} value={duration} className="appearance-none border border-[#BFBFBF] rounded-lg p-3 pl-10 pr-10 font-montserrat font-medium text-base w-full text-[#0B0809] dark:text-[#F5F5F5] dark:bg-[#333333]">
         <option value="" disabled selected hidden>Select Duration</option>
         <option value="1" className='dark:text-[#ffffff]'>1</option>
         <option value="2" className='dark:text-[#ffffff]'>2</option>
@@ -67,24 +75,24 @@ const OnboardingForm = () => {
         <h3 className='font-montsemibold font-bold text-xl dark:text-[#F5F5F5]'>Who are you traveling with?</h3>
         <div className='flex flex-col gap-2 w-full h-[150px] text-base font-montserrat font-medium'>
             <div className='flex gap-3'>
-                <button className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
+                <button onClick={() => {setTravellingWith("solo")}} className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
                 <img src='/assets/images/solo.png' className='h-6 mt-1 block dark:hidden'/>
                 <img src='/assets/images/solo-dark.png' className='h-6 mt-1 hidden dark:block'/>
                 <div className='mt-1 dark:text-[#F5F5F5]'>Solo</div>
                     </button>
-                <button className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
+                <button onClick={() => {setTravellingWith("couple")}} className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
                 <img src='/assets/images/couple.png' className='h-6 mt-1 block dark:hidden'/>
                 <img src='/assets/images/couple-dark.png' className='h-6 mt-1 hidden dark:block'/>
                 <div className='mt-1 dark:text-[#F5F5F5]'>Couple</div>
                     </button>
             </div>
             <div className='flex gap-3 mt-2'>
-            <button className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
+            <button  onClick={() => {setTravellingWith("family")}}className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
                 <img src='/assets/images/family.png' className='h-6 mt-1 block dark:hidden'/>
                 <img src='/assets/images/family-dark.png' className='h-6 mt-1 hidden dark:block'/>
                 <div className='mt-1 dark:text-[#F5F5F5]'>Family</div>
                     </button>
-            <button className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
+            <button  onClick={() => {setTravellingWith("friends")}} className='border flex justify-center focus:border-yellow-500 focus:border-2 p-2 gap-2 rounded-lg w-[170px] h-[50px] border-[#BFBFBF] dark:bg-[#333333]'>
                 <img src='/assets/images/friends.png' className='h-6 mt-1 block dark:hidden'/>
                 <img src='/assets/images/friends-dark.png' className='h-6 mt-1 hidden dark:block'/>
                 <div className='mt-1 dark:text-[#F5F5F5]'>Friends</div>

@@ -4,7 +4,7 @@ import React from 'react'
 
 const FlightDetails = () => {
   return (
-    <div className='bg-[#3643FB] w-[353px] h-[124px] rounded-[16px] mx-[20px] flex justify-between'>
+    <div className='bg-[#3643FB] w-[353px] h-[124px] rounded-[16px] mx-[20px] flex justify-between cursor-pointer'>
   <div className='flex flex-col  w-[341px] h-[105px] p-1 bg-[#313DDF] rounded-[12px] m-2'>
 
     <div className='flex justify-between'>

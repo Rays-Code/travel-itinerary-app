@@ -1,10 +1,14 @@
 import React from 'react';
 import TripCardInfo from './TripCardInfo';
 import BottomNav from '../common/BottomNav';
+import { useNavigate } from 'react-router-dom';
+
 
 const Trip = () => {
+  const navigate = useNavigate()
+
   return (
-    <div className='flex flex-col justify-start items-start w-full sm:w-[353px] gap-4'>
+    <div className='flex flex-col justify-start items-start w-full sm:w-[353px] gap-4 cursor-pointer' onClick={() => {navigate("/search")}}>
       <h3 className='w-[177px] h-[24px] text-lg font-montsemibold text-[#333333] font-bold ml-[18px]'>
         Your Upcoming Trip
       </h3>
