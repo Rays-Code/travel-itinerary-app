@@ -30,7 +30,7 @@ const AccomodationSlider = () => {
     statusLogo: "/assets/images/pending-circle.png"
   },
   {
-    id: 2,
+    id: 3,
     review: "4.3 Very Good",
     name: "Kangaroo Tokyo Hotel",
     image: "/assets/images/kangaroo-hotel-tokyo.jpg",

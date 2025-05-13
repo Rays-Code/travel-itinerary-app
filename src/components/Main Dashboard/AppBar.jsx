@@ -4,7 +4,7 @@ const AppBar = () => {
   return (
     <div className='w-full sm:w-[353px] flex justify-between'>
         <div className='flex flex-col h-[50px] justify-center pl-[18px]'>
-            <h2 className='font-mont font-extrabold text-2xl text-[#333333]'>Hello Chhavi!</h2>
+            <h2 className='font-mont font-extrabold text-2xl text-[#333333]'>Hello Traveller!</h2>
             <p className='text-[#333333] font-montserrat font-medium text-base'>Ready for the trip?</p>
         </div>
         <div className='pr-4 cursor-pointer'>
